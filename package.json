@@ -1,0 +1,32 @@
+{
+  "name": "raizes-do-nordeste-main",
+  "version": "1.0.0",
+  "description": "Projeto Front-End demonstrativo para a atividade prática da trilha de Front-End, baseado no estudo de caso da rede \"Raízes do Nordeste\".",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node server.js"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "js/app.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "html"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^16.2.1",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selecione a unidade, o canal de atendimento e a modalidade do pedido antes de montar a compra." />
+  <meta name="theme-color" content="#365e57" />
+  <title>Raízes do Nordeste | Unidades</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="unidades">
+  <header data-app-header></header>
+
+  <main id="main-content" class="page">
+    <section class="section-header">
+      <p class="eyebrow">Seleção operacional</p>
+      <h1>Escolha a unidade e o tipo de atendimento ideal para seu pedido</h1>
+      <p>
+        O cardápio, o prazo de preparo e as promoções são atualizados conforme a loja, o canal e a modalidade escolhidos.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="filters">
+        <label class="field">
+          <span>Cidade</span>
+          <select id="unit-city-filter">
+            <option value="all">Todas</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Canal de atendimento</span>
+          <select id="channel-select">
+            <option value="web">Web</option>
+            <option value="app">App</option>
+            <option value="totem">Totem</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Modalidade do pedido</span>
+          <select id="service-mode-select">
+            <option value="retirada">Retirada</option>
+            <option value="delivery">Delivery</option>
+            <option value="consumo-local">Consumo no local</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section id="selected-unit-summary" class="panel"></section>
+    <section id="units-grid" class="grid grid-three"></section>
+  </main>
+
+  <footer data-app-footer></footer>
+
+  <script src="js/mock.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/unidades.js"></script>
+</body>
+</html>

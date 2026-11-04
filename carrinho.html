@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Revisão do carrinho com totais, frete, descontos, pontos e detalhes de privacidade da compra." />
+  <meta name="theme-color" content="#365e57" />
+  <title>Raízes do Nordeste | Carrinho</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="carrinho">
+  <header data-app-header></header>
+
+  <main id="main-content" class="page">
+    <section class="section-header">
+      <p class="eyebrow">Revisão do pedido</p>
+      <h1>Revise seu pedido antes de concluir o pagamento</h1>
+      <p>
+        Aqui você confere itens, totais, benefícios aplicados e tudo o que impacta a decisão final de compra.
+      </p>
+    </section>
+
+    <section class="page-progress" aria-label="Etapas do pedido">
+      <article class="progress-step is-complete">
+        <span>1</span>
+        <div>
+          <strong>Cadastro</strong>
+          <small>Perfil e consentimento</small>
+        </div>
+      </article>
+      <article class="progress-step is-complete">
+        <span>2</span>
+        <div>
+          <strong>Cardápio</strong>
+          <small>Produtos selecionados</small>
+        </div>
+      </article>
+      <article class="progress-step is-active">
+        <span>3</span>
+        <div>
+          <strong>Carrinho</strong>
+          <small>Revisão da compra</small>
+        </div>
+      </article>
+      <article class="progress-step">
+        <span>4</span>
+        <div>
+          <strong>Pagamento</strong>
+          <small>Confirmação final</small>
+        </div>
+      </article>
+    </section>
+
+    <section class="checkout-layout">
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Itens selecionados</p>
+            <h2>Seu carrinho</h2>
+          </div>
+        </div>
+        <div id="cart-items"></div>
+      </article>
+      <aside class="sidebar-stack">
+        <aside id="cart-summary" class="panel"></aside>
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Privacidade</p>
+              <h2>Tratamento de dados durante a compra</h2>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li>Dados de contato são usados apenas para identificação e atualização do pedido.</li>
+            <li>Informações de pagamento são enviadas para um gateway externo simulado, sem cobrança real.</li>
+            <li>Preferências de fidelidade e marketing podem ser revisadas na tela de perfil.</li>
+          </ul>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer data-app-footer></footer>
+
+  <script src="js/mock.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

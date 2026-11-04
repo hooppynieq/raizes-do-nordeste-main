@@ -1,0 +1,3171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="zap-relatorio/normalize/normalize.css" rel="stylesheet">
+<link
+	href="zap-relatorio/themes/original/main.css" rel="stylesheet">
+<link
+	href="zap-relatorio/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="zap-relatorio/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on ter. 3 nov. 2026, at 21:15:37</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Médio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alto</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Médio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Baixo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baixo</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://192.168.56.1:8080</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Médio</span>, <span class="risk-level">Baixo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Médio</span>, <span class="confidence-level">Baixo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Médio</span>, <span class="confidence-level">Baixo</span>, <span class="confidence-level">Falso Positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">Alto</th>
+							<th scope="col">Médio</th>
+							<th scope="col">Baixo</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Médio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(28,6%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Baixo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(14,3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(57,1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Médio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Médio)</span> 
+							</th>
+							<th scope="col">
+								<span>Baixo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Baixo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://192.168.56.1:8080</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Médio</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(71,4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Médio</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(71,4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Baixo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(71,4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Information Disclosure - Sensitive Information in URL</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(71,4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Modern Web Application</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Solicitação de autenticação identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(71,4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(128,6%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>7</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Motivo</th>
+						<th scope="col">Site</th>
+						<th scope="col">Descrição</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Baixo</div>
+						</td>
+						<td>
+							<div>Atenção</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP warnings logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>3   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>98 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>1 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>1 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/javascript</div>
+						</td>
+						<td align="center">
+							<div>26 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/jpeg</div>
+						</td>
+						<td align="center">
+							<div>4 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>8 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>52 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Informações</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://192.168.56.1:8080</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>23   </div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Médio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alto</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://192.168.56.1:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/cardapio.html</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (284 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/cardapio.html HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (320 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Fri, 17 Apr 2026 17:44:22 GMT
+etag: W/&quot;2533274790396744-3048-2026-04-17T17:44:22.000Z&quot;
+content-length: 3048
+content-type: text/html; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3048 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Cardápio dinâmico por unidade com filtros, campanhas e acesso rápido ao carrinho.&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#365e57&quot; /&gt;
+  &lt;title&gt;Raízes do Nordeste | Cardápio&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/responsive.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body data-page=&quot;cardapio&quot;&gt;
+  &lt;header data-app-header&gt;&lt;/header&gt;
+
+  &lt;main id=&quot;main-content&quot; class=&quot;page&quot;&gt;
+    &lt;section class=&quot;section-header&quot;&gt;
+      &lt;p class=&quot;eyebrow&quot;&gt;Cardápio da unidade&lt;/p&gt;
+      &lt;h1&gt;Escolha seus favoritos e monte um pedido rápido, claro e confiável&lt;/h1&gt;
+      &lt;p&gt;
+        Os itens são atualizados conforme a unidade, o canal e a modalidade escolhidos para manter a experiência consistente.
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;page-progress&quot; aria-label=&quot;Etapas do pedido&quot;&gt;
+      &lt;article class=&quot;progress-step is-complete&quot;&gt;
+        &lt;span&gt;1&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Cadastro&lt;/strong&gt;
+          &lt;small&gt;Identificação e preferências&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;progress-step is-complete&quot;&gt;
+        &lt;span&gt;2&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Unidade&lt;/strong&gt;
+          &lt;small&gt;Loja, canal e modalidade&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;progress-step is-active&quot;&gt;
+        &lt;span&gt;3&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Cardápio&lt;/strong&gt;
+          &lt;small&gt;Seleção dos produtos&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;progress-step&quot;&gt;
+        &lt;span&gt;4&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Pagamento&lt;/strong&gt;
+          &lt;small&gt;Revisão e confirmação&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;menu-unit-hero&quot; class=&quot;panel&quot;&gt;&lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Busca e filtros&lt;/p&gt;
+          &lt;h2&gt;Encontre o item ideal para o momento&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;filters&quot;&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Buscar item&lt;/span&gt;
+          &lt;input id=&quot;menu-search&quot; type=&quot;search&quot; inputmode=&quot;search&quot; placeholder=&quot;Ex.: baião, tapioca, cocada&quot; /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Categoria&lt;/span&gt;
+          &lt;select id=&quot;menu-category&quot;&gt;
+            &lt;option value=&quot;all&quot;&gt;Todas as categorias&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;commerce-layout&quot;&gt;
+      &lt;div class=&quot;content-stack&quot;&gt;
+        &lt;section id=&quot;menu-list&quot; class=&quot;grid menu-grid&quot;&gt;&lt;/section&gt;
+      &lt;/div&gt;
+      &lt;aside class=&quot;sidebar-stack&quot;&gt;
+        &lt;article id=&quot;menu-campaigns&quot; class=&quot;panel&quot;&gt;&lt;/article&gt;
+        &lt;aside id=&quot;menu-cart-cta&quot; class=&quot;panel&quot;&gt;&lt;/aside&gt;
+      &lt;/aside&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer data-app-footer&gt;&lt;/footer&gt;
+
+  &lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/cardapio.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Médio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://192.168.56.1:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/?consent=on&amp;email=zaproxy%40example.com&amp;goal=delivery&amp;marketing=on&amp;name=ZAP&amp;password=ZAP&amp;phone=9999999999&amp;preferredChannel=app</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (397 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/?consent=on&amp;email=zaproxy%40example.com&amp;goal=delivery&amp;marketing=on&amp;name=ZAP&amp;password=ZAP&amp;phone=9999999999&amp;preferredChannel=app HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (322 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Tue, 03 Nov 2026 17:31:19 GMT
+etag: W/&quot;8444249301320663-14616-2026-11-03T17:31:19.541Z&quot;
+content-length: 14616
+content-type: text/html; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (14616 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;meta name=&quot;description&quot;
+    content=&quot;Plataforma omnicanal da Raízes do Nordeste com boas-vindas, cadastro inicial, LGPD aplicada, cardápio, pedido e fidelidade.&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#365e57&quot; /&gt;
+  &lt;title&gt;Raízes do Nordeste | Início&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/responsive.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body data-page=&quot;home&quot;&gt;
+  &lt;header data-app-header&gt;&lt;/header&gt;
+
+  &lt;main id=&quot;main-content&quot; class=&quot;page page-home&quot;&gt;
+    &lt;section class=&quot;hero hero-home&quot;&gt;
+      &lt;div class=&quot;hero-layout&quot;&gt;
+        &lt;div class=&quot;hero-content&quot;&gt;
+          &lt;div&gt;
+            &lt;div class=&quot;eyebrow&quot;&gt;Boas-vindas à plataforma&lt;/div&gt;
+            &lt;h1&gt;Uma experiência omnicanal pensada para conversão, fidelização e operação real.&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;hero-copy&quot;&gt;
+            A Raízes do Nordeste conecta Web, App e Totem em uma jornada única de cadastro,
+            seleção de unidade, cardápio, pedido, pagamento externo, fidelidade e gestão operacional.
+          &lt;/p&gt;
+          &lt;div class=&quot;hero-proof&quot;&gt;
+            &lt;span class=&quot;tag&quot;&gt;Mobile-first&lt;/span&gt;
+            &lt;span class=&quot;tag&quot;&gt;Checkout externo simulado&lt;/span&gt;
+            &lt;span class=&quot;tag&quot;&gt;Fidelidade ativa&lt;/span&gt;
+            &lt;span class=&quot;tag&quot;&gt;LGPD aplicada&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;feature-list&quot;&gt;
+            &lt;li&gt;Fluxo claro e coerente com o negócio de uma rede em expansão.&lt;/li&gt;
+            &lt;li&gt;Decisões de interface orientadas por jornada, operação e confiança do cliente.&lt;/li&gt;
+            &lt;li&gt;Base consistente para protótipo comercial, validação interna e evolução do produto.&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class=&quot;button-row&quot;&gt;
+            &lt;a class=&quot;button button-primary&quot; href=&quot;#welcome-register-form&quot;&gt;Criar cadastro e começar&lt;/a&gt;
+            &lt;a class=&quot;button button-secondary&quot; href=&quot;#login-form&quot;&gt;Já tenho conta&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;chip-row&quot; aria-label=&quot;Selecione o canal de atendimento preferido&quot;&gt;
+            &lt;button class=&quot;chip is-interactive&quot; type=&quot;button&quot; data-set-channel=&quot;web&quot;&gt;Canal Web&lt;/button&gt;
+            &lt;button class=&quot;chip is-interactive&quot; type=&quot;button&quot; data-set-channel=&quot;app&quot;&gt;Canal App&lt;/button&gt;
+            &lt;button class=&quot;chip is-interactive&quot; type=&quot;button&quot; data-set-channel=&quot;totem&quot;&gt;Canal Totem&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;aside class=&quot;hero-highlight&quot;&gt;
+          &lt;figure class=&quot;hero-brand-visual&quot;&gt;
+            &lt;img src=&quot;assets/img/sabores-destaque.jpg&quot; alt=&quot;Pratos e identidade visual da marca Raízes do Nordeste&quot;
+              width=&quot;1536&quot; height=&quot;1024&quot; loading=&quot;eager&quot; decoding=&quot;async&quot; fetchpriority=&quot;high&quot; /&gt;
+          &lt;/figure&gt;
+          &lt;div&gt;
+            &lt;p class=&quot;eyebrow&quot;&gt;Visão do negócio&lt;/p&gt;
+            &lt;h2&gt;Um protótipo que se sustenta como solução real&lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;credential-list&quot;&gt;
+            &lt;li&gt;
+              &lt;span&gt;Entrada única de cliente&lt;/span&gt;
+              &lt;strong&gt;Cadastro, login e consentimento desde o primeiro contato&lt;/strong&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span&gt;Operação multicanal&lt;/span&gt;
+              &lt;strong&gt;Web, App e Totem refletidos na jornada e nas decisões do pedido&lt;/strong&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span&gt;Fluxo ponta a ponta&lt;/span&gt;
+              &lt;strong&gt;Cardápio, carrinho, pagamento, pedido, fidelidade e administração&lt;/strong&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;O foco aqui não é só visual: é provar clareza de fluxo, aderência ao negócio e maturidade de interface.&lt;/p&gt;
+          &lt;a class=&quot;button button-secondary&quot; href=&quot;#home-lgpd&quot;&gt;Ver privacidade na entrada&lt;/a&gt;
+        &lt;/aside&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;metrics-grid&quot;&gt;
+        &lt;article class=&quot;metric-card&quot;&gt;
+          &lt;strong&gt;3&lt;/strong&gt;
+          &lt;span&gt;Canais suportados&lt;/span&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;metric-card&quot;&gt;
+          &lt;strong&gt;1&lt;/strong&gt;
+          &lt;span&gt;Fluxo contínuo do cadastro ao pagamento&lt;/span&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;metric-card&quot;&gt;
+          &lt;strong&gt;LGPD&lt;/strong&gt;
+          &lt;span&gt;Consentimento explícito na entrada e no checkout&lt;/span&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-two onboarding-grid&quot;&gt;
+      &lt;article class=&quot;panel panel-accent&quot;&gt;
+        &lt;div class=&quot;section-heading&quot;&gt;
+          &lt;div&gt;
+            &lt;p class=&quot;eyebrow&quot;&gt;Comece aqui&lt;/p&gt;
+            &lt;h2&gt;Crie sua conta e personalize o atendimento&lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p&gt;
+          O cadastro entra logo no início para aproximar o protótipo de uma operação real:
+          identificação do cliente, preferências de canal, modalidade do pedido e consentimento.
+        &lt;/p&gt;
+        &lt;form id=&quot;welcome-register-form&quot; class=&quot;form-grid form-large&quot; data-register-form
+          data-consent-source=&quot;boas-vindas&quot;&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Nome completo&lt;/span&gt;
+            &lt;input type=&quot;text&quot; name=&quot;name&quot; autocomplete=&quot;name&quot; placeholder=&quot;Como devemos identificar você?&quot; required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;E-mail&lt;/span&gt;
+            &lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;email&quot; inputmode=&quot;email&quot; placeholder=&quot;voce@exemplo.com&quot;
+              required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Telefone&lt;/span&gt;
+            &lt;input type=&quot;tel&quot; name=&quot;phone&quot; autocomplete=&quot;tel&quot; inputmode=&quot;tel&quot; placeholder=&quot;(00) 90000-0000&quot; required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Senha&lt;/span&gt;
+            &lt;input type=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;new-password&quot; minlength=&quot;6&quot;
+              placeholder=&quot;Crie uma senha segura&quot; required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Canal preferido&lt;/span&gt;
+            &lt;select name=&quot;preferredChannel&quot; required&gt;
+              &lt;option value=&quot;web&quot;&gt;Web&lt;/option&gt;
+              &lt;option value=&quot;app&quot;&gt;App&lt;/option&gt;
+              &lt;option value=&quot;totem&quot;&gt;Totem&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Objetivo principal&lt;/span&gt;
+            &lt;select name=&quot;goal&quot; required&gt;
+              &lt;option value=&quot;retirada&quot;&gt;Retirada no balcão&lt;/option&gt;
+              &lt;option value=&quot;delivery&quot;&gt;Delivery&lt;/option&gt;
+              &lt;option value=&quot;consumo-local&quot;&gt;Consumo no local&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/label&gt;
+          &lt;div class=&quot;notice inline-note&quot;&gt;
+            &lt;strong&gt;Aplicação prática da LGPD&lt;/strong&gt;
+            &lt;p&gt;Usamos apenas os dados necessários para autenticação, histórico do pedido, comunicação do atendimento e
+              fidelidade.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;label class=&quot;checkbox-field&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;consent&quot; required /&gt;
+            &lt;span&gt;Concordo com o uso dos meus dados para criar a conta, identificar meus pedidos e registrar meu
+              histórico de relacionamento.&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;checkbox-field&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;marketing&quot; /&gt;
+            &lt;span&gt;Autorizo o envio de campanhas personalizadas, com opção de revisão posterior no perfil.&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class=&quot;form-actions&quot;&gt;
+            &lt;button class=&quot;button button-primary&quot; type=&quot;submit&quot;&gt;Criar conta e iniciar pedido&lt;/button&gt;
+            &lt;a class=&quot;button button-secondary&quot; href=&quot;cadastro.html&quot;&gt;Abrir cadastro completo&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/article&gt;
+
+      &lt;aside class=&quot;stack-grid&quot;&gt;
+        &lt;section class=&quot;panel&quot;&gt;
+          &lt;div class=&quot;section-heading&quot;&gt;
+            &lt;div&gt;
+              &lt;p class=&quot;eyebrow&quot;&gt;Já sou cliente&lt;/p&gt;
+              &lt;h2&gt;Acesse sua conta&lt;/h2&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;form id=&quot;login-form&quot; class=&quot;form-grid&quot; data-login-form&gt;
+            &lt;label class=&quot;field&quot;&gt;
+              &lt;span&gt;E-mail&lt;/span&gt;
+              &lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;email&quot; inputmode=&quot;email&quot; placeholder=&quot;voce@exemplo.com&quot;
+                required /&gt;
+            &lt;/label&gt;
+            &lt;label class=&quot;field&quot;&gt;
+              &lt;span&gt;Senha&lt;/span&gt;
+              &lt;input type=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;current-password&quot; placeholder=&quot;Digite sua senha&quot;
+                required /&gt;
+            &lt;/label&gt;
+            &lt;div class=&quot;form-actions&quot;&gt;
+              &lt;button class=&quot;button button-primary&quot; type=&quot;submit&quot;&gt;Entrar&lt;/button&gt;
+              &lt;button class=&quot;button button-secondary&quot; id=&quot;guest-access&quot; type=&quot;button&quot;&gt;Entrar como visitante&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;panel&quot; id=&quot;home-lgpd&quot;&gt;
+          &lt;div class=&quot;section-heading&quot;&gt;
+            &lt;div&gt;
+              &lt;p class=&quot;eyebrow&quot;&gt;Privacidade e confiança&lt;/p&gt;
+              &lt;h2&gt;LGPD visível na interface&lt;/h2&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;legal-grid&quot;&gt;
+            &lt;article class=&quot;legal-card&quot;&gt;
+              &lt;h3&gt;Finalidade clara&lt;/h3&gt;
+              &lt;p&gt;Cadastro, pedido, pagamento simulado, fidelidade e comunicação operacional.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;legal-card&quot;&gt;
+              &lt;h3&gt;Consentimento explícito&lt;/h3&gt;
+              &lt;p&gt;Aceites obrigatórios e opcionais aparecem no cadastro, banner e checkout.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;legal-card&quot;&gt;
+              &lt;h3&gt;Controle do titular&lt;/h3&gt;
+              &lt;p&gt;O cliente pode revisar, exportar e excluir dados locais pela tela de perfil.&lt;/p&gt;
+            &lt;/article&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;notice&quot;&gt;
+            &lt;strong&gt;Acessos rápidos&lt;/strong&gt;
+            &lt;p&gt;Cliente: divonir@demo.com / 123456&lt;/p&gt;
+            &lt;p&gt;Admin: admin@demo.com / admin123&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+      &lt;/aside&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Estrutura comercial&lt;/p&gt;
+          &lt;h2&gt;Por que esse fluxo funciona como produto&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid grid-four&quot;&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Entrada orientada&lt;/h3&gt;
+          &lt;p&gt;Boas-vindas, cadastro e login aparecem antes da operação para dar contexto e confiança.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Operação multicanal&lt;/h3&gt;
+          &lt;p&gt;O cliente escolhe Web, App ou Totem, e o sistema responde ao contexto da jornada.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Pagamento representado&lt;/h3&gt;
+          &lt;p&gt;O checkout mostra integração externa de forma visual, sem depender de cobrança real.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Pós-compra completo&lt;/h3&gt;
+          &lt;p&gt;Pedido, fidelidade, campanhas e painel administrativo sustentam a proposta de negócio.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Fluxos da plataforma&lt;/p&gt;
+          &lt;h2&gt;Experiências disponíveis para o cliente e a operação&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid grid-two&quot;&gt;
+        &lt;div&gt;
+          &lt;ul class=&quot;feature-list&quot;&gt;
+            &lt;li&gt;Cadastro e autenticação com consentimento explícito de uso de dados.&lt;/li&gt;
+            &lt;li&gt;Escolha de unidade, canal de atendimento e modalidade do pedido.&lt;/li&gt;
+            &lt;li&gt;Cardápio dinâmico por unidade, com promoções e campanhas.&lt;/li&gt;
+            &lt;li&gt;Pagamento com gateway externo simulado e retorno visual.&lt;/li&gt;
+            &lt;li&gt;Rastreamento do pedido, fidelidade e painel administrativo.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;notice&quot;&gt;
+          &lt;strong&gt;Direção do produto&lt;/strong&gt;
+          &lt;p&gt;A entrada foi desenhada para acelerar o cadastro, deixar o pedido mais próximo e comunicar confiança desde
+            o primeiro contato.&lt;/p&gt;
+          &lt;p&gt;LGPD, multicanalidade e clareza operacional aparecem na interface como parte natural da experiência.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Jornada recomendada&lt;/p&gt;
+          &lt;h2&gt;Como navegar pela plataforma&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;step-grid&quot;&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;1&lt;/span&gt;
+          &lt;h3&gt;Entrar ou criar conta&lt;/h3&gt;
+          &lt;p&gt;O cliente começa pela identificação, preferências e consentimento de dados.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;2&lt;/span&gt;
+          &lt;h3&gt;Selecionar unidade&lt;/h3&gt;
+          &lt;p&gt;Canal, loja e modalidade definem cardápio, frete, prazo e campanhas aplicáveis.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;3&lt;/span&gt;
+          &lt;h3&gt;Montar e pagar&lt;/h3&gt;
+          &lt;p&gt;O pedido segue para carrinho e checkout com retorno visual do parceiro externo.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;4&lt;/span&gt;
+          &lt;h3&gt;Acompanhar relacionamento&lt;/h3&gt;
+          &lt;p&gt;Pedido, fidelidade, perfil e administração fecham a visão completa da operação.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Promoções e campanhas&lt;/p&gt;
+          &lt;h2&gt;Destaques da operação&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;home-promotions&quot; class=&quot;grid grid-three&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-three&quot;&gt;
+      &lt;article class=&quot;panel shortcut-card&quot;&gt;
+        &lt;h2&gt;Unidades&lt;/h2&gt;
+        &lt;p&gt;Escolha a loja, o canal e a modalidade antes de ver o cardápio e os prazos da unidade.&lt;/p&gt;
+        &lt;a class=&quot;text-link&quot; href=&quot;unidades.html&quot;&gt;Ir para unidades&lt;/a&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;panel shortcut-card&quot;&gt;
+        &lt;h2&gt;Cardápio&lt;/h2&gt;
+        &lt;p&gt;Visualize produtos por unidade com filtros, campanhas e CTAs claros para conversão.&lt;/p&gt;
+        &lt;a class=&quot;text-link&quot; href=&quot;cardapio.html&quot;&gt;Ir para cardápio&lt;/a&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;panel shortcut-card&quot;&gt;
+        &lt;h2&gt;Administração&lt;/h2&gt;
+        &lt;p&gt;Acompanhe pedidos, campanhas, consentimentos e visão gerencial como em uma operação real.&lt;/p&gt;
+        &lt;a class=&quot;text-link&quot; href=&quot;admin.html&quot;&gt;Ir para admin&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer data-app-footer&gt;&lt;/footer&gt;
+
+  &lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/auth.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Baixo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://192.168.56.1:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/css/responsive.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (289 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/css/responsive.css HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (320 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Fri, 17 Apr 2026 17:44:22 GMT
+etag: W/&quot;10696049115006336-5385-2026-04-17T17:44:22.000Z&quot;
+content-length: 5385
+content-type: text/css; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5385 bytes)</summary>
+				
+				<pre><code>@media (max-width: 39.99rem) {
+  .utility-shell {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .utility-links {
+    gap: 0.65rem;
+  }
+
+  .utility-login {
+    align-self: flex-start;
+  }
+
+  .header-bar {
+    flex-direction: column;
+  }
+
+  .header-actions {
+    width: 100%;
+    gap: 0.45rem;
+  }
+
+  .header-cta-secondary {
+    display: none;
+  }
+
+  .header-cta {
+    flex: 1 1 auto;
+    min-height: 2.7rem;
+    padding-inline: 0.9rem;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+
+  .header-context-grid,
+  .header-nav-panels,
+  .nav-links-primary,
+  .nav-links-secondary {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    grid-template-columns: 1fr;
+  }
+
+  .header-meta {
+    display: grid;
+  }
+
+  .button-row .button,
+  .form-actions .button,
+  .price-row .button,
+  .hero-highlight .button {
+    width: 100%;
+  }
+
+  .section-heading,
+  .card-title-row,
+  .price-row,
+  .menu-card-footer,
+  .line-item header,
+  .summary-list li,
+  .detail-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-card-footer .button {
+    width: 100%;
+  }
+
+  .cart-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .qty-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .consent-banner {
+    max-width: none;
+  }
+
+  .hero-brand-visual,
+  .banner-media,
+  .unit-media,
+  .campaign-media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .menu-media {
+    min-height: 6.5rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .page-progress {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .header-context-grid {
+    grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 0.8fr));
+  }
+
+  .nav-links-primary,
+  .nav-links-secondary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metrics-grid,
+  .step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 48rem) {
+  body.consent-visible .page {
+    padding-bottom: calc(clamp(4rem, 8vw, 5.5rem) + 7rem);
+  }
+
+  .header-nav-panels {
+    grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 0.9fr);
+    align-items: start;
+  }
+
+  .nav-links-primary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-two,
+  .footer-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-three,
+  .metrics-grid,
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-large {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-large .checkbox-field,
+  .form-large .form-actions,
+  .form-large .payment-methods,
+  .form-large .notice {
+    grid-column: 1 / -1;
+  }
+
+  .filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .commerce-hero-grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(18rem, 0.9fr);
+    align-items: start;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .unit-media,
+  .campaign-media {
+    aspect-ratio: 16 / 9;
+  }
+
+  #checkout-summary,
+  #order-details {
+    position: sticky;
+    top: 7rem;
+    align-self: start;
+  }
+
+  #cart-summary {
+    position: static;
+    top: auto;
+  }
+
+  .consent-banner {
+    left: auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  body.nav-open {
+    overflow: auto;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-cta-secondary {
+    display: inline-flex;
+  }
+
+  .header-shell {
+    grid-template-columns: minmax(19rem, 0.92fr) minmax(0, 1.28fr);
+    align-items: start;
+    gap: 1.35rem;
+  }
+
+  .brand-block {
+    max-width: none;
+  }
+
+  .header-body {
+    display: grid;
+    align-content: start;
+    overflow: visible;
+    max-height: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    padding: 1rem;
+    border-color: rgba(32, 38, 36, 0.08);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(244, 238, 229, 0.9));
+    box-shadow: var(--shadow-soft);
+  }
+
+  .header-context-grid {
+    grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 0.8fr));
+  }
+
+  .header-nav-panels {
+    grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.9fr);
+  }
+
+  .nav-links {
+    display: grid;
+  }
+
+  .nav-links-primary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .nav-links-secondary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-layout {
+    grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.95fr);
+    align-items: stretch;
+  }
+
+  .hero-brand-visual {
+    aspect-ratio: 16 / 11;
+  }
+
+  .onboarding-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+  }
+
+  .commerce-layout,
+  .checkout-layout {
+    grid-template-columns: minmax(0, 1.35fr) minmax(20rem, 0.82fr);
+    align-items: start;
+  }
+
+  .page-progress {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-four,
+  .stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .step-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 80rem) {
+  .page {
+    gap: 1.35rem;
+  }
+
+  .hero,
+  .section-header {
+    padding: clamp(2rem, 3vw, 2.8rem);
+  }
+
+  .panel {
+    padding: clamp(1.3rem, 2.5vw, 1.75rem);
+  }
+}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://192.168.56.1:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Information Disclosure - Sensitive Information in URL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/cadastro.html?consent=on&amp;email=zaproxy%40example.com&amp;goal=delivery&amp;marketing=on&amp;name=ZAP&amp;password=ZAP&amp;phone=9999999999&amp;preferredChannel=app</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/598.html">CWE-598</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/">OWASP_2025_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A solicitação parecia conter informações confidenciais vazadas no URL. Isso pode violar a PCI e a maioria das políticas de conformidade organizacional. Você pode configurar a lista de strings para esta verificação para adicionar ou remover valores específicos para seu ambiente.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>A URL contém endereços de e-mail.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (423 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/cadastro.html?consent=on&amp;email=zaproxy%40example.com&amp;goal=delivery&amp;marketing=on&amp;name=ZAP&amp;password=ZAP&amp;phone=9999999999&amp;preferredChannel=app HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/cadastro.html
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (320 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Fri, 17 Apr 2026 17:44:22 GMT
+etag: W/&quot;2814749767107384-4142-2026-04-17T17:44:22.000Z&quot;
+content-length: 4142
+content-type: text/html; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4142 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Cadastro do cliente com consentimento, preferências de atendimento e foco em transparência no uso de dados.&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#365e57&quot; /&gt;
+  &lt;title&gt;Raízes do Nordeste | Cadastro&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/responsive.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body data-page=&quot;cadastro&quot;&gt;
+  &lt;header data-app-header&gt;&lt;/header&gt;
+
+  &lt;main id=&quot;main-content&quot; class=&quot;page&quot;&gt;
+    &lt;section class=&quot;section-header&quot;&gt;
+      &lt;p class=&quot;eyebrow&quot;&gt;Conta do cliente&lt;/p&gt;
+      &lt;h1&gt;Cadastro completo com foco em transparência e consentimento&lt;/h1&gt;
+      &lt;p&gt;
+        Esta tela aprofunda o onboarding com os dados necessários para autenticação,
+        fidelidade, comunicação do pedido e personalização da experiência.
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-two&quot;&gt;
+      &lt;form id=&quot;register-form&quot; class=&quot;panel form-grid form-large&quot; data-register-form data-consent-source=&quot;cadastro&quot;&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Nome completo&lt;/span&gt;
+          &lt;input type=&quot;text&quot; name=&quot;name&quot; autocomplete=&quot;name&quot; placeholder=&quot;Seu nome&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;E-mail&lt;/span&gt;
+          &lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;email&quot; inputmode=&quot;email&quot; placeholder=&quot;voce@exemplo.com&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Telefone&lt;/span&gt;
+          &lt;input type=&quot;tel&quot; name=&quot;phone&quot; autocomplete=&quot;tel&quot; inputmode=&quot;tel&quot; placeholder=&quot;(00) 90000-0000&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Senha&lt;/span&gt;
+          &lt;input type=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;new-password&quot; minlength=&quot;6&quot; placeholder=&quot;No mínimo 6 caracteres&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Canal preferido&lt;/span&gt;
+          &lt;select name=&quot;preferredChannel&quot; required&gt;
+            &lt;option value=&quot;web&quot;&gt;Web&lt;/option&gt;
+            &lt;option value=&quot;app&quot;&gt;App&lt;/option&gt;
+            &lt;option value=&quot;totem&quot;&gt;Totem&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Objetivo principal&lt;/span&gt;
+          &lt;select name=&quot;goal&quot; required&gt;
+            &lt;option value=&quot;retirada&quot;&gt;Retirada no balcão&lt;/option&gt;
+            &lt;option value=&quot;delivery&quot;&gt;Delivery&lt;/option&gt;
+            &lt;option value=&quot;consumo-local&quot;&gt;Consumo no local&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;checkbox-field&quot;&gt;
+          &lt;input type=&quot;checkbox&quot; name=&quot;consent&quot; required /&gt;
+          &lt;span&gt;Concordo com o uso dos meus dados para autenticação, fidelidade e histórico de pedidos.&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;checkbox-field&quot;&gt;
+          &lt;input type=&quot;checkbox&quot; name=&quot;marketing&quot; /&gt;
+          &lt;span&gt;Desejo receber campanhas e promoções personalizadas.&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;div class=&quot;form-actions&quot;&gt;
+          &lt;button class=&quot;button button-primary&quot; type=&quot;submit&quot;&gt;Criar conta&lt;/button&gt;
+          &lt;a class=&quot;button button-secondary&quot; href=&quot;index.html&quot;&gt;Voltar ao início&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+
+      &lt;aside class=&quot;panel stacked-content&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;LGPD aplicada&lt;/p&gt;
+          &lt;h2&gt;Como os dados são utilizados&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;info-card&quot;&gt;
+          &lt;h3&gt;Dados essenciais&lt;/h3&gt;
+          &lt;p&gt;Nome, telefone e e-mail são usados para identificação do cliente e comunicação do pedido.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;info-card&quot;&gt;
+          &lt;h3&gt;Dados opcionais&lt;/h3&gt;
+          &lt;p&gt;Preferências e aceite de marketing ajudam a personalizar promoções sem impedir a compra.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;info-card&quot;&gt;
+          &lt;h3&gt;Direitos do titular&lt;/h3&gt;
+          &lt;p&gt;O usuário pode revisar, exportar ou excluir seus dados na tela de perfil.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/aside&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer data-app-footer&gt;&lt;/footer&gt;
+
+  &lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/auth.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>zaproxy@example.com</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Não passe informações confidenciais em URIs.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/cardapio.html</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (284 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/cardapio.html HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (320 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Fri, 17 Apr 2026 17:44:22 GMT
+etag: W/&quot;2533274790396744-3048-2026-04-17T17:44:22.000Z&quot;
+content-length: 3048
+content-type: text/html; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3048 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Cardápio dinâmico por unidade com filtros, campanhas e acesso rápido ao carrinho.&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#365e57&quot; /&gt;
+  &lt;title&gt;Raízes do Nordeste | Cardápio&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/responsive.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body data-page=&quot;cardapio&quot;&gt;
+  &lt;header data-app-header&gt;&lt;/header&gt;
+
+  &lt;main id=&quot;main-content&quot; class=&quot;page&quot;&gt;
+    &lt;section class=&quot;section-header&quot;&gt;
+      &lt;p class=&quot;eyebrow&quot;&gt;Cardápio da unidade&lt;/p&gt;
+      &lt;h1&gt;Escolha seus favoritos e monte um pedido rápido, claro e confiável&lt;/h1&gt;
+      &lt;p&gt;
+        Os itens são atualizados conforme a unidade, o canal e a modalidade escolhidos para manter a experiência consistente.
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;page-progress&quot; aria-label=&quot;Etapas do pedido&quot;&gt;
+      &lt;article class=&quot;progress-step is-complete&quot;&gt;
+        &lt;span&gt;1&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Cadastro&lt;/strong&gt;
+          &lt;small&gt;Identificação e preferências&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;progress-step is-complete&quot;&gt;
+        &lt;span&gt;2&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Unidade&lt;/strong&gt;
+          &lt;small&gt;Loja, canal e modalidade&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;progress-step is-active&quot;&gt;
+        &lt;span&gt;3&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Cardápio&lt;/strong&gt;
+          &lt;small&gt;Seleção dos produtos&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;progress-step&quot;&gt;
+        &lt;span&gt;4&lt;/span&gt;
+        &lt;div&gt;
+          &lt;strong&gt;Pagamento&lt;/strong&gt;
+          &lt;small&gt;Revisão e confirmação&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;menu-unit-hero&quot; class=&quot;panel&quot;&gt;&lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Busca e filtros&lt;/p&gt;
+          &lt;h2&gt;Encontre o item ideal para o momento&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;filters&quot;&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Buscar item&lt;/span&gt;
+          &lt;input id=&quot;menu-search&quot; type=&quot;search&quot; inputmode=&quot;search&quot; placeholder=&quot;Ex.: baião, tapioca, cocada&quot; /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Categoria&lt;/span&gt;
+          &lt;select id=&quot;menu-category&quot;&gt;
+            &lt;option value=&quot;all&quot;&gt;Todas as categorias&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;commerce-layout&quot;&gt;
+      &lt;div class=&quot;content-stack&quot;&gt;
+        &lt;section id=&quot;menu-list&quot; class=&quot;grid menu-grid&quot;&gt;&lt;/section&gt;
+      &lt;/div&gt;
+      &lt;aside class=&quot;sidebar-stack&quot;&gt;
+        &lt;article id=&quot;menu-campaigns&quot; class=&quot;panel&quot;&gt;&lt;/article&gt;
+        &lt;aside id=&quot;menu-cart-cta&quot; class=&quot;panel&quot;&gt;&lt;/aside&gt;
+      &lt;/aside&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer data-app-footer&gt;&lt;/footer&gt;
+
+  &lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/cardapio.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baixo</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://192.168.56.1:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Solicitação de autenticação identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/?consent=on&amp;email=zaproxy%40example.com&amp;goal=delivery&amp;marketing=on&amp;name=ZAP&amp;password=ZAP&amp;phone=9999999999&amp;preferredChannel=app</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A solicitação em questão foi identificada como uma solicitação de autenticação. O campo &quot;Outras Informações&quot; contém um conjunto de linhas chave=valor que identificam quaisquer campos relevantes. Se a solicitação estiver em um contexto com um Método de Autenticação definido como &quot;Detecção Automática&quot;, esta regra alterará a autenticação para corresponder à solicitação identificada.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://192.168.56.1:8080/</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (397 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/?consent=on&amp;email=zaproxy%40example.com&amp;goal=delivery&amp;marketing=on&amp;name=ZAP&amp;password=ZAP&amp;phone=9999999999&amp;preferredChannel=app HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (322 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Tue, 03 Nov 2026 17:31:19 GMT
+etag: W/&quot;8444249301320663-14616-2026-11-03T17:31:19.541Z&quot;
+content-length: 14616
+content-type: text/html; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (14616 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;meta name=&quot;description&quot;
+    content=&quot;Plataforma omnicanal da Raízes do Nordeste com boas-vindas, cadastro inicial, LGPD aplicada, cardápio, pedido e fidelidade.&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#365e57&quot; /&gt;
+  &lt;title&gt;Raízes do Nordeste | Início&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/responsive.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body data-page=&quot;home&quot;&gt;
+  &lt;header data-app-header&gt;&lt;/header&gt;
+
+  &lt;main id=&quot;main-content&quot; class=&quot;page page-home&quot;&gt;
+    &lt;section class=&quot;hero hero-home&quot;&gt;
+      &lt;div class=&quot;hero-layout&quot;&gt;
+        &lt;div class=&quot;hero-content&quot;&gt;
+          &lt;div&gt;
+            &lt;div class=&quot;eyebrow&quot;&gt;Boas-vindas à plataforma&lt;/div&gt;
+            &lt;h1&gt;Uma experiência omnicanal pensada para conversão, fidelização e operação real.&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;hero-copy&quot;&gt;
+            A Raízes do Nordeste conecta Web, App e Totem em uma jornada única de cadastro,
+            seleção de unidade, cardápio, pedido, pagamento externo, fidelidade e gestão operacional.
+          &lt;/p&gt;
+          &lt;div class=&quot;hero-proof&quot;&gt;
+            &lt;span class=&quot;tag&quot;&gt;Mobile-first&lt;/span&gt;
+            &lt;span class=&quot;tag&quot;&gt;Checkout externo simulado&lt;/span&gt;
+            &lt;span class=&quot;tag&quot;&gt;Fidelidade ativa&lt;/span&gt;
+            &lt;span class=&quot;tag&quot;&gt;LGPD aplicada&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;feature-list&quot;&gt;
+            &lt;li&gt;Fluxo claro e coerente com o negócio de uma rede em expansão.&lt;/li&gt;
+            &lt;li&gt;Decisões de interface orientadas por jornada, operação e confiança do cliente.&lt;/li&gt;
+            &lt;li&gt;Base consistente para protótipo comercial, validação interna e evolução do produto.&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class=&quot;button-row&quot;&gt;
+            &lt;a class=&quot;button button-primary&quot; href=&quot;#welcome-register-form&quot;&gt;Criar cadastro e começar&lt;/a&gt;
+            &lt;a class=&quot;button button-secondary&quot; href=&quot;#login-form&quot;&gt;Já tenho conta&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;chip-row&quot; aria-label=&quot;Selecione o canal de atendimento preferido&quot;&gt;
+            &lt;button class=&quot;chip is-interactive&quot; type=&quot;button&quot; data-set-channel=&quot;web&quot;&gt;Canal Web&lt;/button&gt;
+            &lt;button class=&quot;chip is-interactive&quot; type=&quot;button&quot; data-set-channel=&quot;app&quot;&gt;Canal App&lt;/button&gt;
+            &lt;button class=&quot;chip is-interactive&quot; type=&quot;button&quot; data-set-channel=&quot;totem&quot;&gt;Canal Totem&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;aside class=&quot;hero-highlight&quot;&gt;
+          &lt;figure class=&quot;hero-brand-visual&quot;&gt;
+            &lt;img src=&quot;assets/img/sabores-destaque.jpg&quot; alt=&quot;Pratos e identidade visual da marca Raízes do Nordeste&quot;
+              width=&quot;1536&quot; height=&quot;1024&quot; loading=&quot;eager&quot; decoding=&quot;async&quot; fetchpriority=&quot;high&quot; /&gt;
+          &lt;/figure&gt;
+          &lt;div&gt;
+            &lt;p class=&quot;eyebrow&quot;&gt;Visão do negócio&lt;/p&gt;
+            &lt;h2&gt;Um protótipo que se sustenta como solução real&lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;credential-list&quot;&gt;
+            &lt;li&gt;
+              &lt;span&gt;Entrada única de cliente&lt;/span&gt;
+              &lt;strong&gt;Cadastro, login e consentimento desde o primeiro contato&lt;/strong&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span&gt;Operação multicanal&lt;/span&gt;
+              &lt;strong&gt;Web, App e Totem refletidos na jornada e nas decisões do pedido&lt;/strong&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span&gt;Fluxo ponta a ponta&lt;/span&gt;
+              &lt;strong&gt;Cardápio, carrinho, pagamento, pedido, fidelidade e administração&lt;/strong&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;O foco aqui não é só visual: é provar clareza de fluxo, aderência ao negócio e maturidade de interface.&lt;/p&gt;
+          &lt;a class=&quot;button button-secondary&quot; href=&quot;#home-lgpd&quot;&gt;Ver privacidade na entrada&lt;/a&gt;
+        &lt;/aside&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;metrics-grid&quot;&gt;
+        &lt;article class=&quot;metric-card&quot;&gt;
+          &lt;strong&gt;3&lt;/strong&gt;
+          &lt;span&gt;Canais suportados&lt;/span&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;metric-card&quot;&gt;
+          &lt;strong&gt;1&lt;/strong&gt;
+          &lt;span&gt;Fluxo contínuo do cadastro ao pagamento&lt;/span&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;metric-card&quot;&gt;
+          &lt;strong&gt;LGPD&lt;/strong&gt;
+          &lt;span&gt;Consentimento explícito na entrada e no checkout&lt;/span&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-two onboarding-grid&quot;&gt;
+      &lt;article class=&quot;panel panel-accent&quot;&gt;
+        &lt;div class=&quot;section-heading&quot;&gt;
+          &lt;div&gt;
+            &lt;p class=&quot;eyebrow&quot;&gt;Comece aqui&lt;/p&gt;
+            &lt;h2&gt;Crie sua conta e personalize o atendimento&lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p&gt;
+          O cadastro entra logo no início para aproximar o protótipo de uma operação real:
+          identificação do cliente, preferências de canal, modalidade do pedido e consentimento.
+        &lt;/p&gt;
+        &lt;form id=&quot;welcome-register-form&quot; class=&quot;form-grid form-large&quot; data-register-form
+          data-consent-source=&quot;boas-vindas&quot;&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Nome completo&lt;/span&gt;
+            &lt;input type=&quot;text&quot; name=&quot;name&quot; autocomplete=&quot;name&quot; placeholder=&quot;Como devemos identificar você?&quot; required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;E-mail&lt;/span&gt;
+            &lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;email&quot; inputmode=&quot;email&quot; placeholder=&quot;voce@exemplo.com&quot;
+              required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Telefone&lt;/span&gt;
+            &lt;input type=&quot;tel&quot; name=&quot;phone&quot; autocomplete=&quot;tel&quot; inputmode=&quot;tel&quot; placeholder=&quot;(00) 90000-0000&quot; required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Senha&lt;/span&gt;
+            &lt;input type=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;new-password&quot; minlength=&quot;6&quot;
+              placeholder=&quot;Crie uma senha segura&quot; required /&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Canal preferido&lt;/span&gt;
+            &lt;select name=&quot;preferredChannel&quot; required&gt;
+              &lt;option value=&quot;web&quot;&gt;Web&lt;/option&gt;
+              &lt;option value=&quot;app&quot;&gt;App&lt;/option&gt;
+              &lt;option value=&quot;totem&quot;&gt;Totem&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;field&quot;&gt;
+            &lt;span&gt;Objetivo principal&lt;/span&gt;
+            &lt;select name=&quot;goal&quot; required&gt;
+              &lt;option value=&quot;retirada&quot;&gt;Retirada no balcão&lt;/option&gt;
+              &lt;option value=&quot;delivery&quot;&gt;Delivery&lt;/option&gt;
+              &lt;option value=&quot;consumo-local&quot;&gt;Consumo no local&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/label&gt;
+          &lt;div class=&quot;notice inline-note&quot;&gt;
+            &lt;strong&gt;Aplicação prática da LGPD&lt;/strong&gt;
+            &lt;p&gt;Usamos apenas os dados necessários para autenticação, histórico do pedido, comunicação do atendimento e
+              fidelidade.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;label class=&quot;checkbox-field&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;consent&quot; required /&gt;
+            &lt;span&gt;Concordo com o uso dos meus dados para criar a conta, identificar meus pedidos e registrar meu
+              histórico de relacionamento.&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;checkbox-field&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;marketing&quot; /&gt;
+            &lt;span&gt;Autorizo o envio de campanhas personalizadas, com opção de revisão posterior no perfil.&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class=&quot;form-actions&quot;&gt;
+            &lt;button class=&quot;button button-primary&quot; type=&quot;submit&quot;&gt;Criar conta e iniciar pedido&lt;/button&gt;
+            &lt;a class=&quot;button button-secondary&quot; href=&quot;cadastro.html&quot;&gt;Abrir cadastro completo&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/article&gt;
+
+      &lt;aside class=&quot;stack-grid&quot;&gt;
+        &lt;section class=&quot;panel&quot;&gt;
+          &lt;div class=&quot;section-heading&quot;&gt;
+            &lt;div&gt;
+              &lt;p class=&quot;eyebrow&quot;&gt;Já sou cliente&lt;/p&gt;
+              &lt;h2&gt;Acesse sua conta&lt;/h2&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;form id=&quot;login-form&quot; class=&quot;form-grid&quot; data-login-form&gt;
+            &lt;label class=&quot;field&quot;&gt;
+              &lt;span&gt;E-mail&lt;/span&gt;
+              &lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;email&quot; inputmode=&quot;email&quot; placeholder=&quot;voce@exemplo.com&quot;
+                required /&gt;
+            &lt;/label&gt;
+            &lt;label class=&quot;field&quot;&gt;
+              &lt;span&gt;Senha&lt;/span&gt;
+              &lt;input type=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;current-password&quot; placeholder=&quot;Digite sua senha&quot;
+                required /&gt;
+            &lt;/label&gt;
+            &lt;div class=&quot;form-actions&quot;&gt;
+              &lt;button class=&quot;button button-primary&quot; type=&quot;submit&quot;&gt;Entrar&lt;/button&gt;
+              &lt;button class=&quot;button button-secondary&quot; id=&quot;guest-access&quot; type=&quot;button&quot;&gt;Entrar como visitante&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;panel&quot; id=&quot;home-lgpd&quot;&gt;
+          &lt;div class=&quot;section-heading&quot;&gt;
+            &lt;div&gt;
+              &lt;p class=&quot;eyebrow&quot;&gt;Privacidade e confiança&lt;/p&gt;
+              &lt;h2&gt;LGPD visível na interface&lt;/h2&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;legal-grid&quot;&gt;
+            &lt;article class=&quot;legal-card&quot;&gt;
+              &lt;h3&gt;Finalidade clara&lt;/h3&gt;
+              &lt;p&gt;Cadastro, pedido, pagamento simulado, fidelidade e comunicação operacional.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;legal-card&quot;&gt;
+              &lt;h3&gt;Consentimento explícito&lt;/h3&gt;
+              &lt;p&gt;Aceites obrigatórios e opcionais aparecem no cadastro, banner e checkout.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;legal-card&quot;&gt;
+              &lt;h3&gt;Controle do titular&lt;/h3&gt;
+              &lt;p&gt;O cliente pode revisar, exportar e excluir dados locais pela tela de perfil.&lt;/p&gt;
+            &lt;/article&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;notice&quot;&gt;
+            &lt;strong&gt;Acessos rápidos&lt;/strong&gt;
+            &lt;p&gt;Cliente: divonir@demo.com / 123456&lt;/p&gt;
+            &lt;p&gt;Admin: admin@demo.com / admin123&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+      &lt;/aside&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Estrutura comercial&lt;/p&gt;
+          &lt;h2&gt;Por que esse fluxo funciona como produto&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid grid-four&quot;&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Entrada orientada&lt;/h3&gt;
+          &lt;p&gt;Boas-vindas, cadastro e login aparecem antes da operação para dar contexto e confiança.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Operação multicanal&lt;/h3&gt;
+          &lt;p&gt;O cliente escolhe Web, App ou Totem, e o sistema responde ao contexto da jornada.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Pagamento representado&lt;/h3&gt;
+          &lt;p&gt;O checkout mostra integração externa de forma visual, sem depender de cobrança real.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;shortcut-card&quot;&gt;
+          &lt;h3&gt;Pós-compra completo&lt;/h3&gt;
+          &lt;p&gt;Pedido, fidelidade, campanhas e painel administrativo sustentam a proposta de negócio.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Fluxos da plataforma&lt;/p&gt;
+          &lt;h2&gt;Experiências disponíveis para o cliente e a operação&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;grid grid-two&quot;&gt;
+        &lt;div&gt;
+          &lt;ul class=&quot;feature-list&quot;&gt;
+            &lt;li&gt;Cadastro e autenticação com consentimento explícito de uso de dados.&lt;/li&gt;
+            &lt;li&gt;Escolha de unidade, canal de atendimento e modalidade do pedido.&lt;/li&gt;
+            &lt;li&gt;Cardápio dinâmico por unidade, com promoções e campanhas.&lt;/li&gt;
+            &lt;li&gt;Pagamento com gateway externo simulado e retorno visual.&lt;/li&gt;
+            &lt;li&gt;Rastreamento do pedido, fidelidade e painel administrativo.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;notice&quot;&gt;
+          &lt;strong&gt;Direção do produto&lt;/strong&gt;
+          &lt;p&gt;A entrada foi desenhada para acelerar o cadastro, deixar o pedido mais próximo e comunicar confiança desde
+            o primeiro contato.&lt;/p&gt;
+          &lt;p&gt;LGPD, multicanalidade e clareza operacional aparecem na interface como parte natural da experiência.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Jornada recomendada&lt;/p&gt;
+          &lt;h2&gt;Como navegar pela plataforma&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;step-grid&quot;&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;1&lt;/span&gt;
+          &lt;h3&gt;Entrar ou criar conta&lt;/h3&gt;
+          &lt;p&gt;O cliente começa pela identificação, preferências e consentimento de dados.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;2&lt;/span&gt;
+          &lt;h3&gt;Selecionar unidade&lt;/h3&gt;
+          &lt;p&gt;Canal, loja e modalidade definem cardápio, frete, prazo e campanhas aplicáveis.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;3&lt;/span&gt;
+          &lt;h3&gt;Montar e pagar&lt;/h3&gt;
+          &lt;p&gt;O pedido segue para carrinho e checkout com retorno visual do parceiro externo.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;article class=&quot;step-card&quot;&gt;
+          &lt;span class=&quot;step-number&quot;&gt;4&lt;/span&gt;
+          &lt;h3&gt;Acompanhar relacionamento&lt;/h3&gt;
+          &lt;p&gt;Pedido, fidelidade, perfil e administração fecham a visão completa da operação.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;section-heading&quot;&gt;
+        &lt;div&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Promoções e campanhas&lt;/p&gt;
+          &lt;h2&gt;Destaques da operação&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;home-promotions&quot; class=&quot;grid grid-three&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-three&quot;&gt;
+      &lt;article class=&quot;panel shortcut-card&quot;&gt;
+        &lt;h2&gt;Unidades&lt;/h2&gt;
+        &lt;p&gt;Escolha a loja, o canal e a modalidade antes de ver o cardápio e os prazos da unidade.&lt;/p&gt;
+        &lt;a class=&quot;text-link&quot; href=&quot;unidades.html&quot;&gt;Ir para unidades&lt;/a&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;panel shortcut-card&quot;&gt;
+        &lt;h2&gt;Cardápio&lt;/h2&gt;
+        &lt;p&gt;Visualize produtos por unidade com filtros, campanhas e CTAs claros para conversão.&lt;/p&gt;
+        &lt;a class=&quot;text-link&quot; href=&quot;cardapio.html&quot;&gt;Ir para cardápio&lt;/a&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;panel shortcut-card&quot;&gt;
+        &lt;h2&gt;Administração&lt;/h2&gt;
+        &lt;p&gt;Acompanhe pedidos, campanhas, consentimentos e visão gerencial como em uma operação real.&lt;/p&gt;
+        &lt;a class=&quot;text-link&quot; href=&quot;admin.html&quot;&gt;Ir para admin&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer data-app-footer&gt;&lt;/footer&gt;
+
+  &lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/auth.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Este é um alerta informativo e não uma vulnerabilidade, portanto não há nada a ser corrigido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://192.168.56.1:8080/admin.html?description=Zaproxy+alias+impedit+expedita+quisquam+pariatur+exercitationem.+Nemo+rerum+eveniet+dolores+rem+quia+dignissimos.&amp;discountRate=10&amp;minimumOrder=50&amp;title=ZAP&amp;unitId=all</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A05_2025-Injection/">OWASP_2025_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p>http://192.168.56.1:8080/admin.html?description=Zaproxy+alias+impedit+expedita+quisquam+pariatur+exercitationem.+Nemo+rerum+eveniet+dolores+rem+quia+dignissimos.&amp;discountRate=10&amp;minimumOrder=50&amp;title=ZAP&amp;unitId=all</p>
+
+<p>appears to include user input in:</p>
+
+<p>a(n) [option] tag [value] attribute</p>
+
+<p>The user input found was:</p>
+
+<p>unitId=all</p>
+
+<p>The user-controlled value was:</p>
+
+<p>all</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (470 bytes)</summary>
+				
+				<pre><code>GET http://192.168.56.1:8080/admin.html?description=Zaproxy+alias+impedit+expedita+quisquam+pariatur+exercitationem.+Nemo+rerum+eveniet+dolores+rem+quia+dignissimos.&amp;discountRate=10&amp;minimumOrder=50&amp;title=ZAP&amp;unitId=all HTTP/1.1
+host: 192.168.56.1:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://192.168.56.1:8080/admin.html
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (321 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+cache-control: max-age=3600
+last-modified: Fri, 17 Apr 2026 17:44:22 GMT
+etag: W/&quot;12666373951980278-2682-2026-04-17T17:44:22.000Z&quot;
+content-length: 2682
+content-type: text/html; charset=UTF-8
+Date: Wed, 04 Nov 2026 00:10:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2682 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Painel administrativo com indicadores, campanhas, pedidos recentes e acompanhamento de privacidade.&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#365e57&quot; /&gt;
+  &lt;title&gt;Raízes do Nordeste | Admin&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/responsive.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body data-page=&quot;admin&quot;&gt;
+  &lt;header data-app-header&gt;&lt;/header&gt;
+
+  &lt;main id=&quot;main-content&quot; class=&quot;page&quot;&gt;
+    &lt;section class=&quot;section-header&quot;&gt;
+      &lt;p class=&quot;eyebrow&quot;&gt;Painel gerencial&lt;/p&gt;
+      &lt;h1&gt;Visão operacional da rede e dos fluxos de atendimento&lt;/h1&gt;
+      &lt;p&gt;
+        O painel consolida indicadores, campanhas, pedidos recentes e privacidade em uma visão central da operação.
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id=&quot;admin-stats&quot; class=&quot;grid grid-four&quot;&gt;&lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-two&quot;&gt;
+      &lt;article id=&quot;admin-orders&quot; class=&quot;panel&quot;&gt;&lt;/article&gt;
+
+      &lt;form id=&quot;campaign-form&quot; class=&quot;panel form-grid&quot;&gt;
+        &lt;div class=&quot;section-heading&quot;&gt;
+          &lt;div&gt;
+            &lt;p class=&quot;eyebrow&quot;&gt;Marketing&lt;/p&gt;
+            &lt;h2&gt;Criar campanha interna&lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Título da campanha&lt;/span&gt;
+          &lt;input type=&quot;text&quot; name=&quot;title&quot; autocomplete=&quot;off&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Descrição&lt;/span&gt;
+          &lt;textarea name=&quot;description&quot; rows=&quot;4&quot; required&gt;&lt;/textarea&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Unidade&lt;/span&gt;
+          &lt;select name=&quot;unitId&quot;&gt;
+            &lt;option value=&quot;all&quot;&gt;Toda a rede&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Desconto (%)&lt;/span&gt;
+          &lt;input type=&quot;number&quot; name=&quot;discountRate&quot; min=&quot;0&quot; max=&quot;30&quot; inputmode=&quot;decimal&quot; value=&quot;10&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;field&quot;&gt;
+          &lt;span&gt;Pedido mínimo (R$)&lt;/span&gt;
+          &lt;input type=&quot;number&quot; name=&quot;minimumOrder&quot; min=&quot;0&quot; inputmode=&quot;decimal&quot; value=&quot;50&quot; required /&gt;
+        &lt;/label&gt;
+        &lt;div class=&quot;form-actions&quot;&gt;
+          &lt;button class=&quot;button button-primary&quot; type=&quot;submit&quot;&gt;Publicar campanha&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;grid grid-two&quot;&gt;
+      &lt;article id=&quot;privacy-panel&quot; class=&quot;panel&quot;&gt;&lt;/article&gt;
+      &lt;aside id=&quot;admin-units&quot; class=&quot;panel&quot;&gt;&lt;/aside&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer data-app-footer&gt;&lt;/footer&gt;
+
+  &lt;script src=&quot;js/mock.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/admin.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>unitId</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Information Disclosure - Sensitive Information in URL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10024/">Information Disclosure - Sensitive Information in URL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/598.html">598</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Solicitação de autenticação identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Solicitação de autenticação identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

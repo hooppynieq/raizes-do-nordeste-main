@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Perfil do cliente com atualização cadastral, consentimentos, exportação e exclusão de dados locais." />
+  <meta name="theme-color" content="#365e57" />
+  <title>Raízes do Nordeste | Perfil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="perfil">
+  <header data-app-header></header>
+
+  <main id="main-content" class="page">
+    <section class="section-header">
+      <p class="eyebrow">Conta e privacidade</p>
+      <h1>Perfil do cliente com controles de dados</h1>
+      <p>
+        A tela centraliza dados cadastrais, preferências, aceites e ações ligadas aos direitos do titular.
+      </p>
+    </section>
+
+    <section class="grid grid-two">
+      <form id="profile-form" class="panel form-grid form-large">
+        <label class="field">
+          <span>Nome completo</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label class="field">
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" inputmode="email" required />
+        </label>
+        <label class="field">
+          <span>Telefone</span>
+          <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
+        </label>
+        <label class="field">
+          <span>Canal preferido</span>
+          <select name="preferredChannel">
+            <option value="web">Web</option>
+            <option value="app">App</option>
+            <option value="totem">Totem</option>
+          </select>
+        </label>
+        <label class="checkbox-field">
+          <input type="checkbox" name="marketing" />
+          <span>Receber campanhas personalizadas</span>
+        </label>
+        <div class="form-actions">
+          <button class="button button-primary" type="submit">Salvar perfil</button>
+        </div>
+      </form>
+
+      <aside class="panel stacked-content">
+        <div>
+          <p class="eyebrow">LGPD</p>
+          <h2>Consentimentos e direitos</h2>
+        </div>
+        <div id="consent-status" class="info-card"></div>
+        <div class="button-column">
+          <button class="button button-secondary" id="export-data" type="button">Exportar dados locais</button>
+          <button class="button button-secondary" id="clear-data" type="button">Excluir dados locais</button>
+        </div>
+        <pre id="profile-data-export" class="code-block is-hidden"></pre>
+      </aside>
+    </section>
+
+    <section id="profile-activity" class="panel"></section>
+  </main>
+
+  <footer data-app-footer></footer>
+
+  <script src="js/mock.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

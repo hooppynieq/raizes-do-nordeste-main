@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cardápio dinâmico por unidade com filtros, campanhas e acesso rápido ao carrinho." />
+  <meta name="theme-color" content="#365e57" />
+  <title>Raízes do Nordeste | Cardápio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="cardapio">
+  <header data-app-header></header>
+
+  <main id="main-content" class="page">
+    <section class="section-header">
+      <p class="eyebrow">Cardápio da unidade</p>
+      <h1>Escolha seus favoritos e monte um pedido rápido, claro e confiável</h1>
+      <p>
+        Os itens são atualizados conforme a unidade, o canal e a modalidade escolhidos para manter a experiência consistente.
+      </p>
+    </section>
+
+    <section class="page-progress" aria-label="Etapas do pedido">
+      <article class="progress-step is-complete">
+        <span>1</span>
+        <div>
+          <strong>Cadastro</strong>
+          <small>Identificação e preferências</small>
+        </div>
+      </article>
+      <article class="progress-step is-complete">
+        <span>2</span>
+        <div>
+          <strong>Unidade</strong>
+          <small>Loja, canal e modalidade</small>
+        </div>
+      </article>
+      <article class="progress-step is-active">
+        <span>3</span>
+        <div>
+          <strong>Cardápio</strong>
+          <small>Seleção dos produtos</small>
+        </div>
+      </article>
+      <article class="progress-step">
+        <span>4</span>
+        <div>
+          <strong>Pagamento</strong>
+          <small>Revisão e confirmação</small>
+        </div>
+      </article>
+    </section>
+
+    <section id="menu-unit-hero" class="panel"></section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Busca e filtros</p>
+          <h2>Encontre o item ideal para o momento</h2>
+        </div>
+      </div>
+      <div class="filters">
+        <label class="field">
+          <span>Buscar item</span>
+          <input id="menu-search" type="search" inputmode="search" placeholder="Ex.: baião, tapioca, cocada" />
+        </label>
+        <label class="field">
+          <span>Categoria</span>
+          <select id="menu-category">
+            <option value="all">Todas as categorias</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="commerce-layout">
+      <div class="content-stack">
+        <section id="menu-list" class="grid menu-grid"></section>
+      </div>
+      <aside class="sidebar-stack">
+        <article id="menu-campaigns" class="panel"></article>
+        <aside id="menu-cart-cta" class="panel"></aside>
+      </aside>
+    </section>
+  </main>
+
+  <footer data-app-footer></footer>
+
+  <script src="js/mock.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cardapio.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+   {
+     "liveServer.settings.ignoreFiles": [
+       ".vscode/**",
+       "**/node_modules/**",
+       "evidencias/**",
+       "coverage/**",
+       "cypress/**"
+     ]
+   }
